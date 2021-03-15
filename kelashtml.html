@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="index.html">Kembali</a></li>
+  </ul>
+
+    <h1>Menggunakan Atribut Kelas</h1>
+
+    <p>class Atribut sering digunakan untuk menunjuk ke nama kelas dalam style sheet. Ini juga dapat digunakan oleh JavaScript untuk mengakses dan memanipulasi elemen dengan nama kelas tertentu.
+
+      Dalam contoh berikut kami memiliki  tiga <code class="w3-codespan">&lt;div&gt;</code> elemen dengan <code class="w3-codespan">&lt;class&gt;</code>atribut dengan nilai "kota". Ketiga <code class="w3-codespan">&lt;div&gt;</code> elemen akan diberi gaya yang sama sesuai dengan .kota definisi gaya di bagian head:</p>
+    
+      
+<div class="city">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div> 
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+
+<p>Dalam contoh berikut kami memiliki dua <code class="w3-codespan">&lt;span&gt;</code> elemen dengan classatribut dengan nilai "note". Kedua <code class="w3-codespan">&lt;span&gt;</code> elemen akan diberi gaya yang sama sesuai dengan .note definisi gaya di bagian kepala:</p>
+<br>
+<hr>
+
+
+<style>
+  .note {
+    font-size: 120%;
+    color: red;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1>My <span class="note">Important</span> Heading</h1>
+  <p>This is some <span class="note">important</span> text.</p>
+  <br>
+  <hr>
+<h1>Sintaks Untuk Kelas</h1>
+<p>
+  Untuk membuat kelas; tulis karakter titik (.), diikuti dengan nama kelas. Kemudian, tentukan properti CSS di dalam kurung kurawal {}:
+</p>
+<br>
+
+  <h2 class="city">London</h2>
+  <p>London is the capital of England.</p>
+  
+  <h2 class="city">Paris</h2>
+  <p>Paris is the capital of France.</p>
+  
+  <h2 class="city">Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  
+<br>
+<hr>
+<h1>Kelas Ganda</h1>
+<br>
+<p>Di sini, ketiga elemen h2 termasuk dalam kelas "kota". Selain itu, London juga termasuk dalam kelas "utama", yang meratakan teks ke tengah.</p>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+<hr>
+<br>
+<h1>Elemen Berbeda Dapat Berbagi Kelas yang Sama</h1>
+<br>
+
+
+<p>Meskipun kedua elemen tidak memiliki nama tag yang sama, keduanya dapat mengarah ke kelas yang sama, dan mendapatkan gaya CSS yang sama:</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France.</p>
+<br>
+<hr>
+<h1>Penggunaan Atribut Kelas dalam JavaScript</h1>
+
+<br>
+<p>Klik tombol untuk menyembunyikan semua elemen dengan nama kelas "kota":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
+<button  onclick="document.location='index.html'" >Kembali</button>
+</body>
+</html>

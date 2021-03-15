@@ -2,9 +2,30 @@
 <head>
     <title>Latihan Mengatur size Font</title>
 </head>
-<body>
-<center>
-    <h1 style="border:2px solid midnightblue;text-align:center;">Ukuran Huruf</h1>
+<style>
+    .note {
+        color: blue;
+        border: 2px;
+        border:2px solid midnightblue;
+    }
+    body{
+        text-align: center;
+    }
+    button{
+        margin: 10px;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        background-color: #f44336;
+        
+        }
+    </style>
+        
+    <body>
+    <h1><span class="note">Ukuran Huruf</span></h1>
+    
     <!-- Buat Judul -->
     <h1><font face="arial">Judul Dengan H1</font></h1><br>
     <h2><font face="arial">Judul Dengan H2</font></h2><br>
@@ -23,7 +44,6 @@
     <font face="arial" size="5">Size 5</font><br>
     <font face="arial" size="6">Size 6</font><br>
     <font face="arial" size="7">Size 7</font><br>
-    <center><a href="index.html">Kembali</a></center>
-</center>
+    <button  onclick="document.location='index.html'" >Kembali</button>
 </body>
 </html>
