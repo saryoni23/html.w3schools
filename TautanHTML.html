@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+        color: blue;
+        font-family: verdana;
+        font-size: 200%;
+        text-align:center;
+        }
+        p {
+        color: rgb(70, 114, 236);
+        font-family: courier;
+        font-size: 160%;
+        padding: 30px;
+        margin: 50px;
+        border: 2px solid powderblue;
+        text-align:justify;
+
+        }
+        button{
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        background-color: #f44336;
+        
+        }
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <p><a href="#smile">Smile</a></p>
+<p><a href="#send">Send Email</a></p>
+    
+    <h1>Absolute URLs</h1>
+    <p >Atribut terpenting dari <a> elemen adalah hrefatribut, yang menunjukkan tujuan tautan.
+        Tautan HTML - Atribut target
+Secara default, halaman yang ditautkan akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan target lain untuk tautan tersebut.
+
+The targetmenspesifikasikan atribut mana untuk membuka dokumen terkait.
+
+The targetatribut dapat memiliki salah satu dari nilai berikut:
+
+_self- Default. Membuka dokumen di jendela / tab yang sama seperti yang diklik
+_blank - Membuka dokumen di jendela atau tab baru
+_parent - Membuka dokumen di bingkai induk
+_top - Membuka dokumen di seluruh badan jendela</p>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h1>Relative URLs</h1>
+<p><a href="https://www.w3schools.com/html/html_images.asp">HTML Images</a></p>
+<p><a href="https://www.w3schools.com/css/default.asp">CSS Tutorial</a></p>
+
+<p id="smile"><a href="assets/smile.png"><img src="assets/smile.png" alt="HTML tutorial" style="width:20px;height:20px;">Smile</a><br></p>
+
+<p id="send"><a href="mailto:indrasaryoni@gmail.com">Send email</a><br></p>
+
+<p><a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a><br></p>
+
+<button  onclick="document.location='index.html'" >Kembali</button>
+</body>
+</html>
