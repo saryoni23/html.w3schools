@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+<style>
+    #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+    } 
+</style>
+</head>
+<body>
+    <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;margin-right: 220px;'>
+        <div class='w3-row w3-white'>
+            <div class='w3-col l10 m12' id='main'>
+                <div id='mainLeaderboard' style='overflow:hidden;'>
+                    <h1>iframe HTML</h1>
+                    <p>Anda dapat menggunakan atribut height dan width untuk menentukan ukuran iframe:</p>
+
+                    <iframe src="htmlcss.html" height="200" width="300" title="Iframe Example"></iframe>
+
+                    <br>
+                    <hr>
+                    <p>Anda juga dapat menggunakan properti tinggi dan lebar CSS untuk menentukan ukuran iframe:</p>
+                    
+                    <iframe src="htmlcss.html" style="height:200px;width:300px" title="Iframe Example"></iframe>
+                    <hr>
+                    <br>
+                    <h1>menghapus Perbatasan Iframe</h1>
+                    <p>Untuk menghapus batas default iframe, gunakan CSS</p>
+
+                    <iframe src="htmlcss.html" style="border:none;" title="Iframe Example"></iframe>
+                    <hr>
+                    <br>
+                    <h1>Perbatasan Iframe Kustom</h1>
+                    <p>Dengan CSS, Anda juga dapat mengubah ukuran, gaya, dan warna bingkai iframe</p>
+                    
+                    <iframe src="htmlcss.html" style="border:4px solid red;" title="Iframe Example"></iframe>
+                    <br>
+                    <hr>
+                    <h2>Iframe - Target untuk Tautan</h2>
+                    <iframe src="index.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+                    <p><a href="tabel.html" target="iframe_a">Tabel</a></p>
+                    <p>Jika atribut target dari sebuah link cocok dengan nama iframe, link tersebut akan terbuka di iframe.</p>
+                    <hr>
+                    <br>
+                    <button onclick="document.location='index.html'">Kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
